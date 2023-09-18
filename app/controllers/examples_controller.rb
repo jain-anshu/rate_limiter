@@ -3,6 +3,10 @@ class ExamplesController < ApplicationController
         render json: {msg: "Success"}
     end
 
+    def show   
+        render json: {msg: "Success"} 
+    end
+
     def limited
         render json: {msg: "Success"}
     end
