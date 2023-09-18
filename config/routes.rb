@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :examples, only: :index
+  get '/examples/unlimited', to: 'examples#unlimited'
+  get '/examples/limited', to: 'examples#limited'
 end
